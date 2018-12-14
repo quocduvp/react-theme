@@ -8,14 +8,19 @@ import "assets/css/material-dashboard-react.css?v=1.5.0";
 import indexRoutes from "routes/index.jsx";
 
 // const hist = createBrowserHistory();
-
+// basename={'/WebApplication1'}
 ReactDOM.render(
-  <Router basename={'/WebApplication1'}>
-    <Switch>
-      {indexRoutes.map((prop, key) => {
-        return <Route path={prop.path} component={prop.component} key={key} />;
-      })}
-    </Switch>
-  </Router>,
+  <React.Fragment>
+    <div id="fb-root"></div>
+    <div className="fb-customerchat" attribution="setup_tool" page_id="1080022028847487">
+    </div>
+    <Router>
+      <Switch>
+        {indexRoutes.map((prop, key) => {
+          return <Route path={prop.path} component={prop.component} key={key} />;
+        })}
+      </Switch>
+    </Router>
+  </React.Fragment>,
   document.getElementById("root")
 );
