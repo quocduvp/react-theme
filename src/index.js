@@ -11,9 +11,6 @@ import indexRoutes from "routes/index.jsx";
 // basename={'/WebApplication1'}
 ReactDOM.render(
   <React.Fragment>
-    <div id="fb-root"></div>
-    <div className="fb-customerchat" attribution="setup_tool" page_id="1080022028847487">
-    </div>
     <Router>
       <Switch>
         {indexRoutes.map((prop, key) => {
