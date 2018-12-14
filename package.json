@@ -4,7 +4,7 @@
   "description": "Material Dashboard React. Coded by Creative Tim",
   "private": false,
   "main": "server.js",
-  "homepage": ".",
+  "homepage": "http://localhost:8084/WebApplication1",
   "dependencies": {
     "@babel/core": "7.1.0",
     "@material-ui/core": "3.1.0",
